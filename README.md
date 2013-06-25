@@ -1,1 +1,3 @@
-This is the readme file for the project
+<h1>Prog 3: Nine Man's Morris<h1>
+<p>The purpose of this excerise was to test my skills in the C Programming Language as a hopeful future canidate of the UIC CS 141, i wanted to take a step forward and test my skills on what i know and what i don't know. I truly believe as a computer scienctist this won't be something i do now, but a lesson for me to use throughout my whole life.</p>
+<h5>This use or reproduction of this code for educational purposes only, and for reuse in later projects</h5>
