@@ -177,7 +177,7 @@ int main(int argc, char* argv) {
 				while ( checkForErrorWhenUserPlacingPiece(x,y,player1.playerPieceSymbol,player2.playerPieceSymbol) )
 				{			
 					drawBoard();		
-					flush(stdin);
+					flush();
 
 					printf("Where would %c like to move: ", player1.playerPieceSymbol);
 					scanf("%c%d", &charY, &x);
@@ -211,7 +211,7 @@ int main(int argc, char* argv) {
 				{		
 
 					drawBoard();
-					flush(stdin);
+					flush();
 
 					printf("Sorry, you can't move there please try again!: ");
 					scanf("%c%d %c%d", &oldY, &oldX, &newY, &x);
@@ -251,7 +251,7 @@ int main(int argc, char* argv) {
 				/**/while (checkForErrorWhenUserRemovingPiece(x,y,player1.playerPieceSymbol))
 				{
 					drawBoard();
-					flush(stdin);		
+					flush();		
 
 					printf("What piece would %s like to remove from play: ", player1.playerName);
 					scanf("%c%d", &charY, &x);
@@ -301,7 +301,7 @@ int main(int argc, char* argv) {
 				while ( checkForErrorWhenUserPlacingPiece(x,y,player2.playerPieceSymbol,player1.playerPieceSymbol) )
 				{
 					drawBoard();
-					flush(stdin);
+					flush();
 					printf("You made a mistake try again\n");					
 					printf("Where would %c like to move: ", player2.playerPieceSymbol);
 					scanf("%c%d", &charY, &x);
@@ -335,7 +335,7 @@ int main(int argc, char* argv) {
 						player2.playerPieceSymbol, player1.playerPieceSymbol) )
 				{	
 					drawBoard();
-					flush(stdin);
+					flush();
 
 					printf("Where would %c like to move: ", player2.playerPieceSymbol);
 					scanf("%c%d %c%d", &oldY, &oldX, &newY, &x);
@@ -361,7 +361,7 @@ int main(int argc, char* argv) {
 			if ( checkIfUserWon(player2) )
 			{
 				drawBoard();
-				flush(stdin);
+				flush();
 
 				// Get user input
 				printf("What piece would you like to remove from play: ");
@@ -372,7 +372,7 @@ int main(int argc, char* argv) {
 				while (checkForErrorWhenUserRemovingPiece(x,y,player2.playerPieceSymbol))
 				{
 					drawBoard();
-					flush(stdin);
+					flush();
 
 					printf("What piece would %s like to remove from play: ", player2.playerName);
 					scanf("%c%d", &charY, &x);
@@ -393,6 +393,6 @@ int main(int argc, char* argv) {
 				}/**/
 			}
 		} // end of the if/else
-		flush(stdin);
+		flush();
 	} // End of the while loop
 }
