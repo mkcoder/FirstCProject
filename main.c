@@ -1,15 +1,9 @@
-/*
-* TODO:	
-* 1. Fix up the move piece logical setup,
-* 2. Redo the logical moves
-*/
-
-int YAxisToInt(char y);
-
 #include <stdio.h>
 #include <stdlib.h>
 #include "Board/board.h"
 #include "Player/player.h"
+
+int YAxisToInt(char y);
 
 bool checkForErrorWhenUserMovingPiece(int x,int y,int oldX,int oldY,char currentPlayerSymbol,char otherPlayerSymbol)
 {
